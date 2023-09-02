@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
+    <title>灵心云</title>
+    <meta name="description" content="独步山野，悠然自得">
+    <meta name="keywords" content="PHP,CC,个人博客,灵心云,博客">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="http://photo.cloudlx.top/lxy.png">
+    <link rel="stylesheet" href="static/css/ins.css">
+   <link rel="stylesheet" href="static/layui/css/layui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.fancybox@2.1.5/source/jquery.fancybox.css">
+    <script type="text/javascript">
+        if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
+            alert('朋友，上古浏览器不支持呢~');
+        }
+    </script>
+</head>
+
+<body>
+    <div id="body-wrap">
+        <!-- 搭建一个api随机图 -> https://blog.cloudlx.top/archives/453/ -->
+        <nav class="not_index_bg" id="nav" style="background-image:url(http://photo.cloudlx.top/m/2023/05/05/64549a243560e.jpg)">
+            <div id="page_site-info">
+                <div id="site-title">
+                    <span class="blogtitle"></span>
+                    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+                    <script>
+                        var typed = new Typed(".blogtitle", {
+                            strings: ['独步田野！', '悠然自得！'],
+                            startDelay: 300,
+                            typeSpeed: 100,
+                            loop: true,
+                            backSpeed: 50,
+                            showCursor: true
+                        });
+                    </script>
+                </div>
+            </div>
+        </nav>
+        <main id="content-outer">
+            <div class="layout_page" id="content-inner">
+                <div class="aside_content" id="aside_content">
+                    <div class="card-widget card-info">
+                        <div class="card-content">
+                            <div class="card-info-avatar is-center">
+                                <img class="avatar-img"
+                                    src="http://photo.cloudlx.top/m/2023/07/18/64b60193bf0ae.jpeg"
+                                    alt="avatar">
+                                <div class="author-info__name">
+                                <i class="layui-icon layui-icon-username"></i>
+                                CC
+                                </div><br>
+                                <div class="author-info__description">
+                                <i class="layui-icon layui-icon-about"></i>
+                                愿历此坎坷，山河可无恙，人间皆可安
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-widget card-announcement">
+                        <div class="card-content">
+                            <div class="item-headline">
+                            <img src="https://apis.jxcxin.cn/api/ip?apiKey=37a525e05cd25cd3eef25b9391c5bd16" alt="CC">
+                        </div>
+                      </div>
+                    </div>   
+                    
+                    <div class="card-widget card-webinfo">
+                        <div class="card-content">
+                            <div class="item-headline">
+                                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                                <span>站点信息</span>
+                            </div>
+                            <div class="webinfo">
+                                <div class="webinfo-item">
+                                <div class="webinfo-site-uv-name"><i class="layui-icon layui-icon-rate-half"></i>本站访客数 :</div>
+                                <div class="webinfo-site-uv-count" id="busuanzi_value_site_uv"></div>
+                                </div>
+                                <div class="webinfo-item">
+                                <div class="webinfo-site-name"><i class="layui-icon layui-icon-rate"></i>本站总访问 :</div>
+                                <div class="webinfo-site-pv-count" id="busuanzi_value_site_pv"></div>
+                                </div>
+                                <div class="webinfo-item">
+                                <div class="webinfo-site-uv-name"><i class="layui-icon layui-icon-rate-solid"></i>文章阅读数 :</div>
+                                <div class="webinfo-site-uv-count" id="busuanzi_value_page_pv"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="card-widget card-announcement" style="text-align:center;color:blue;">
+                        <div class="card-content">
+                            <div class="item-headline">
+                                <div class="layui-card">
+                               <div class="layui-card-header">
+                               <h3>
+                               <i class="layui-icon layui-icon-login-qq"></i>站长邮箱
+                               </h3>
+                               </div>
+                                <div class="layui-card-body">
+                                <a href="mailto:mail@cclove.icu">
+                                    mail@cclove.icu
+                                 </a>
+                             </div>
+                            </div>
+                            <div class="layui-card">
+                               <div class="layui-card-header">
+                               <h3>
+                               <i class="layui-icon layui-icon-website"></i>站点链接
+                               </h3>
+                               </div>
+                                 <div class="layui-card-body">
+                                 <a href="index.html">
+                                   灵心云
+                                </a>
+                             </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--结束-->
+                </div>
+               
+                <article id="page">
+                    <div class="article-container">
+                        <h2>音乐</h2><br>
+                        <meting-js auto="https://music.163.com/#/playlist?id=505926603">
+                        </meting-js>
+                        <hr>
+
+                        <h2>技能</h2><br>
+                        <div class="skillbox">
+                            <div class="skillbar">
+                                <div class="skillbar-title"
+                                    style="background: linear-gradient(to right, #FF0066 0%, #FF00CC 100%); width: 83%">
+                                    <span>摸鱼</span>
+                                </div>
+                                <div class="skill-bar-percent">83%</div>
+                            </div>
+                            <div class="skillbar">
+                                <div class="skillbar-title"
+                                    style="background: linear-gradient(to right, #9900FF 0%, #CC66FF 100%); width: 70%">
+                                    <span>前端</span>
+                                </div>
+                                <div class="skill-bar-percent">70%</div>
+                            </div>
+                            <div class="skillbar">
+                                <div class="skillbar-title"
+                                    style="background: linear-gradient(to right, #2196F3 0%, #42A5F5 100%); width: 60%">
+                                    <span>JAVA</span>
+                                </div>
+                                <div class="skill-bar-percent">60%</div>
+                            </div>
+                            <div class="skillbar">
+                                <div class="skillbar-title"
+                                    style="background: linear-gradient(to right, #4CAF50 0%, #81C784 100%); width: 40%">
+                                    <span>Go</span>
+                                </div>
+                                <div class="skill-bar-percent">40%</div>
+                            </div>
+                            <div class="skillbar">
+                                <div class="skillbar-title"
+                                    style="background: linear-gradient(to right, #00BCD4 0%, #f54009 100%); width: 25%">
+                                    <span>魔法</span>
+                                </div>
+                                <div class="skill-bar-percent">25%</div>
+                            </div>
+                        </div>
+
+                             <hr>
+                        <h3>我的站点</h3><br>
+                        <div class="button-xmrk">
+                 <center>
+                 <a href="#" class="layui-btn layui-btn-primary"><i class="layui-icon layui-icon-water"></i>暂无</a>
+                 
+                 </center>
+                        </div>
+                       
+               </div>
+                <hr>
+                <blockquote class="layui-elem-quote"><i class="layui-icon layui-icon-component"></i>执笔安天下，踏马定乾坤！</blockquote>
+                <blockquote class="layui-elem-quote layui-quote-nm"><i class="layui-icon layui-icon-fire"></i>放弃信念，无异死亡！</blockquote>
+                <!-- <blockquote class="layui-elem-quote"> -->
+                <h4 id ="time"></h4>
+                </blockquote>
+                
+                        <!--结束-->
+                </article>
+            </div>
+        </main>
+        
+        <footer id="footer">
+            <div id="footer-wrap">
+                <h5 style="text-align: center">
+                    <div class="row">
+                        <div class="col col-xs-4">
+                            <p class="copyright">© 2022-2023 灵心云. All rights reserved</p><br>
+                        </div>
+                    </div>
+        </h5>
+            </div>
+        </footer>
+    </div>
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.0/lazysizes.min.js" async></script>
+    <!-- aplayer、meting -->
+    <!-- require APlayer -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+    <!-- require MetingJS -->
+    <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+    <!--鼠标点击效果-->
+    <script src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/maodian.js"></script>
+    <script src="static/layui/layui.js"></script>
+</body>
+
+</html>
